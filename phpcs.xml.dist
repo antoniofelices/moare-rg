@@ -47,4 +47,8 @@
 			</property>
 		</properties>
 	</rule>
+
+	<rule ref="Squiz.Commenting.FileComment">
+		<exclude-pattern>*/index.php</exclude-pattern>
+	</rule>
 </ruleset>
