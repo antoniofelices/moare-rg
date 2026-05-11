@@ -6,7 +6,7 @@ A WordPress plugin that provides the complete content structure for a research-g
 
 - **Custom post types:** `project`, `publication`, `researcher` — all public, REST-enabled, with archive support.
 - **Custom taxonomy:** `year` — hierarchical, attached to `publication`, REST-enabled.
-- **ACF Pro field groups:** placeholder text fields for all three CPTs (10 for project, 5 for publication, 10 for researcher). Replace placeholders with real fields as needed.
+- **ACF Pro field groups:** placeholder text fields for all three CPTs (10 for project, 5 for publication, 10 for researcher).
 - **FSE block templates:** archive and single templates for all three CPTs, wired to the correct post types via `register_block_template()`.
 - **Dynamic block** `moare-rg/publications-by-year`: server-rendered, lists all publications grouped by year term in descending order.
 

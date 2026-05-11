@@ -37,21 +37,21 @@ add_action( 'init', __NAMESPACE__ . '\register_taxs', 10 );
  */
 function register_year_tax() {
 	$labels = array(
-		'name'                       => _x( 'Years', 'taxonomy general name', 'moare-rg' ),
-		'singular_name'              => _x( 'Year', 'taxonomy singular name', 'moare-rg' ),
-		'search_items'               => __( 'Search Years', 'moare-rg' ),
-		'all_items'                  => __( 'All Years', 'moare-rg' ),
-		'parent_item'                => __( 'Parent Year', 'moare-rg' ),
-		'parent_item_colon'          => __( 'Parent Year:', 'moare-rg' ),
-		'edit_item'                  => __( 'Edit Year', 'moare-rg' ),
-		'update_item'                => __( 'Update Year', 'moare-rg' ),
-		'add_new_item'               => __( 'Add New Year', 'moare-rg' ),
-		'new_item_name'              => __( 'New Year Name', 'moare-rg' ),
-		'menu_name'                  => _x( 'Years', 'admin menu', 'moare-rg' ),
-		'not_found'                  => __( 'No years found.', 'moare-rg' ),
-		'items_list'                 => __( 'Years list', 'moare-rg' ),
-		'items_list_navigation'      => __( 'Years list navigation', 'moare-rg' ),
-		'back_to_items'              => __( '&larr; Go to Years', 'moare-rg' ),
+		'name'                  => _x( 'Years', 'taxonomy general name', 'moare-rg' ),
+		'singular_name'         => _x( 'Year', 'taxonomy singular name', 'moare-rg' ),
+		'search_items'          => __( 'Search Years', 'moare-rg' ),
+		'all_items'             => __( 'All Years', 'moare-rg' ),
+		'parent_item'           => __( 'Parent Year', 'moare-rg' ),
+		'parent_item_colon'     => __( 'Parent Year:', 'moare-rg' ),
+		'edit_item'             => __( 'Edit Year', 'moare-rg' ),
+		'update_item'           => __( 'Update Year', 'moare-rg' ),
+		'add_new_item'          => __( 'Add New Year', 'moare-rg' ),
+		'new_item_name'         => __( 'New Year Name', 'moare-rg' ),
+		'menu_name'             => _x( 'Years', 'admin menu', 'moare-rg' ),
+		'not_found'             => __( 'No years found.', 'moare-rg' ),
+		'items_list'            => __( 'Years list', 'moare-rg' ),
+		'items_list_navigation' => __( 'Years list navigation', 'moare-rg' ),
+		'back_to_items'         => __( '&larr; Go to Years', 'moare-rg' ),
 	);
 
 	$rewrite = array(

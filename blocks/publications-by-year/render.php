@@ -43,12 +43,11 @@ function moare_rg_publications_by_year_render() {
 
 	foreach ( $terms as $term ) {
 
-		// TODO: paginate this query if the publication list per year grows large.
 		$query_by_year = new WP_Query(
 			array(
 				'post_type'      => 'mrg_publication',
 				'posts_per_page' => -1,
-				'orderby'        => array( 'meta_value' => 'ASC' ),
+				'orderby'        => array( 'meta_value' => 'ASC' ), // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_value -- intentional sort by authors.
 				'meta_key'       => 'mrg_authors', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
 				'tax_query'      => array( // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_tax_query
 					array(
@@ -105,7 +104,7 @@ function moare_rg_publications_by_year_render() {
 
 ?>
 
-<div <?php echo get_block_wrapper_attributes( array( 'class' => 'moare-rg-publications-by-year' ) ); ?>>
+<div <?php echo get_block_wrapper_attributes( array( 'class' => 'moare-rg-publications-by-year' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- trusted core function, sanitizes internally. ?>>
 
 	<?php moare_rg_publications_by_year_render(); ?>
 

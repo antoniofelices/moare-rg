@@ -17,7 +17,7 @@ Moare RG registers the full content model for a research-group WordPress site:
 
 * **Project**, **Publication**, and **Researcher** custom post types.
 * **Year** hierarchical taxonomy attached to Publication.
-* ACF Pro field groups for all three post types (placeholder fields, ready to customise).
+* ACF Pro field groups for all three post types.
 * FSE block templates for archive and single views of all three CPTs.
 * A server-rendered dynamic block (`moare-rg/publications-by-year`) that lists publications grouped by year.
 
