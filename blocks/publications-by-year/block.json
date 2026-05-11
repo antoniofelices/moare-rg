@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "moare-rg/publications-by-year",
+  "title": "Publications by Year",
+  "category": "theme",
+  "icon": "book-alt",
+  "description": "Lists all publications grouped by year term in descending order.",
+  "keywords": ["publications", "year", "research", "list"],
+  "textdomain": "moare-rg",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"]
+  },
+  "style": "file:./style.css"
+}

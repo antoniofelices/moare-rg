@@ -1,0 +1,37 @@
+{
+  "name": "moare/moare-rg",
+  "license": "GPL-2.0-or-later",
+  "description": "Research-group content structure for WordPress: CPTs, taxonomy, ACF fields, FSE templates, and a dynamic block.",
+  "homepage": "https://github.com/antoniofelices/moare-rg",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "research group",
+    "custom post types",
+    "custom taxonomies",
+    "acf"
+  ],
+  "authors": [
+    {
+      "name": "antonio felices",
+      "email": "antonio@studiomoare.com"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/antoniofelices/moare-rg"
+  },
+  "require": {
+    "php": ">=8.3"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.13",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.1",
+    "wp-coding-standards/wpcs": "^3.2",
+    "phpcompatibility/phpcompatibility-wp": "^2.1"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}

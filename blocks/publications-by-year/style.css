@@ -1,0 +1,31 @@
+.moare-rg-publications-by-year {
+	container-type: inline-size;
+}
+
+.moare-rg-publications-by-year__group {
+	margin-block-end: 2rem;
+}
+
+.moare-rg-publications-by-year__year {
+	font-size: 1.25rem;
+	margin-block-end: 0.5rem;
+}
+
+.moare-rg-publications-by-year__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.moare-rg-publications-by-year__item {
+	padding-block: 0.25rem;
+	border-block-end: 1px solid currentColor;
+}
+
+.moare-rg-publications-by-year__item a {
+	text-decoration: none;
+}
+
+.moare-rg-publications-by-year__item a:hover {
+	text-decoration: underline;
+}

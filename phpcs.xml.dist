@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<ruleset name="Moare RG">
+	<description>PHP_CodeSniffer rules for the moare-rg plugin.</description>
+
+	<!-- Scan these files. -->
+	<file>.</file>
+
+	<!-- Exclude generated / third-party directories. -->
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/languages/*</exclude-pattern>
+
+	<!-- Only check PHP files. -->
+	<arg name="extensions" value="php"/>
+
+	<!-- Show progress and use colours. -->
+	<arg value="sp"/>
+	<arg name="colors"/>
+
+	<!-- Parallelise. -->
+	<arg name="parallel" value="8"/>
+
+	<!-- Coding standards. -->
+	<rule ref="WordPress"/>
+	<rule ref="WordPress-Extra"/>
+
+	<!-- PHP compatibility. -->
+	<rule ref="PHPCompatibilityWP"/>
+	<config name="testVersion" value="8.3-"/>
+	<config name="minimum_supported_wp_version" value="6.7"/>
+
+	<!-- Project-specific rules. -->
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="moare-rg"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="moare_rg"/>
+				<element value="MOARE_RG"/>
+				<element value="Moare_Rg"/>
+			</property>
+		</properties>
+	</rule>
+</ruleset>

@@ -1,0 +1,36 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+<main class="wp-block-group">
+
+	<!-- wp:query-title {"type":"archive"} /-->
+
+	<!-- wp:query {"queryId":0,"query":{"postType":"researcher","perPage":10,"inherit":true}} -->
+	<div class="wp-block-query">
+
+		<!-- wp:post-template -->
+			<!-- wp:post-title {"isLink":true} /-->
+			<!-- wp:post-excerpt /-->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph -->
+			<p>No researchers found.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+
+	</div>
+	<!-- /wp:query -->
+
+	<!-- TODO: customise this template — add a grid layout, researcher card pattern, or featured researchers section -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->
