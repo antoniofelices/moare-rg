@@ -66,7 +66,7 @@ function register_project_cpt() {
 		'public'          => true,
 		'menu_position'   => 20,
 		'menu_icon'       => 'dashicons-portfolio',
-		'supports'        => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
+		'supports'        => array( 'title', 'thumbnail', 'excerpt', 'revisions' ),
 		'has_archive'     => true,
 		'rewrite'         => $rewrite,
 		'capability_type' => 'post',
@@ -112,12 +112,12 @@ function register_publication_cpt() {
 		'public'          => true,
 		'menu_position'   => 21,
 		'menu_icon'       => 'dashicons-book-alt',
-		'supports'        => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
+		'supports'        => array( 'title', 'thumbnail', 'excerpt', 'revisions' ),
 		'has_archive'     => true,
 		'rewrite'         => $rewrite,
 		'capability_type' => 'post',
 		'show_in_rest'    => true,
-		'taxonomies'      => array( 'year' ),
+		'taxonomies'      => array( 'mrg_year' ),
 	);
 
 	register_post_type( 'mrg_publication', $args );
@@ -159,7 +159,7 @@ function register_researcher_cpt() {
 		'public'          => true,
 		'menu_position'   => 22,
 		'menu_icon'       => 'dashicons-groups',
-		'supports'        => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
+		'supports'        => array( 'title', 'thumbnail', 'excerpt', 'revisions' ),
 		'has_archive'     => true,
 		'rewrite'         => $rewrite,
 		'capability_type' => 'post',
