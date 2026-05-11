@@ -2,13 +2,63 @@
 
 <!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
 <main class="wp-block-group">
-
 	<!-- wp:post-title {"level":1} /-->
-	<!-- wp:post-featured-image /-->
 	<!-- wp:post-content /-->
 
-	<!-- TODO: customise this template — add ACF field output blocks (authors, journal, DOI, abstract) once fields are configured -->
+	<!-- wp:group {"layout":{"type":"default"}} -->
+	<div class="wp-block-group">
+	<!-- wp:heading -->
+	<h2 class="wp-block-heading">Authors</h2>
+	<!-- /wp:heading -->
+	<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"mrg_authors"}}}}} -->
+	<p></p>
+	<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
 
+	<!-- wp:group {"layout":{"type":"default"}} -->
+	<div class="wp-block-group">
+	<!-- wp:heading -->
+	<h2 class="wp-block-heading">Year</h2>
+	<!-- /wp:heading -->
+	<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"mrg_year"}}}}} -->
+	<p></p>
+	<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"layout":{"type":"default"}} -->
+	<div class="wp-block-group">
+	<!-- wp:heading -->
+	<h2 class="wp-block-heading">Publishing on</h2>
+	<!-- /wp:heading -->
+	<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"mrg_publishing_on"}}}}} -->
+	<p></p>
+	<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"layout":{"type":"default"}} -->
+	<div class="wp-block-group">
+	<!-- wp:heading -->
+	<h2 class="wp-block-heading">Type</h2>
+	<!-- /wp:heading -->
+	<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"mrg_type"}}}}} -->
+	<p></p>
+	<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:group {"layout":{"type":"default"}} -->
+	<div class="wp-block-group">
+	<!-- wp:heading -->
+	<h2 class="wp-block-heading">External link</h2>
+	<!-- /wp:heading -->
+	<!-- wp:paragraph {"metadata":{"bindings":{"content":{"source":"acf/field","args":{"key":"mrg_external_link"}}}}} -->
+	<p></p>
+	<!-- /wp:paragraph -->
+	</div>
+	<!-- /wp:group -->
 </main>
 <!-- /wp:group -->
 
