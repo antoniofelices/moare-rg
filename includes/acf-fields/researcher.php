@@ -48,9 +48,9 @@ function register_field_group() {
 					'append'            => '',
 				),
 				array(
-					'key'               => 'field_mrg_researcher_deparment',
+					'key'               => 'field_mrg_researcher_department',
 					'label'             => __( 'Deparment', 'moare-rg' ),
-					'name'              => 'mrg_deparment',
+					'name'              => 'mrg_department',
 					'aria-label'        => '',
 					'type'              => 'text',
 					'instructions'      => '',
