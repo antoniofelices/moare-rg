@@ -112,7 +112,7 @@ function register_publication_cpt() {
 		'public'          => true,
 		'menu_position'   => 21,
 		'menu_icon'       => 'dashicons-book-alt',
-		'supports'        => array( 'title', 'thumbnail', 'excerpt', 'revisions' ),
+		'supports'        => array( 'title', 'revisions' ),
 		'has_archive'     => true,
 		'rewrite'         => $rewrite,
 		'capability_type' => 'post',
