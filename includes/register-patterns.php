@@ -67,7 +67,7 @@ function register_patterns() {
 			continue;
 		}
 
-		if ( 0 !== strpos( $real_file, $real_dir ) ) {
+		if ( ! str_starts_with( $real_file, $real_dir . DIRECTORY_SEPARATOR ) ) {
 			continue;
 		}
 
