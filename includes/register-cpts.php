@@ -71,6 +71,9 @@ function register_project_cpt() {
 		'rewrite'         => $rewrite,
 		'capability_type' => 'post',
 		'show_in_rest'    => true,
+		'template'        => array(
+			array( 'core/pattern', array( 'slug' => 'moare-rg/single-mrg-project' ) ),
+		),
 	);
 
 	register_post_type( 'mrg_project', $args );
@@ -112,12 +115,12 @@ function register_publication_cpt() {
 		'public'          => true,
 		'menu_position'   => 21,
 		'menu_icon'       => 'dashicons-book-alt',
-		'supports'        => array( 'title', 'editor', 'thumbnail', 'excerpt', 'revisions' ),
+		'supports'        => array( 'title', 'revisions' ),
 		'has_archive'     => true,
 		'rewrite'         => $rewrite,
 		'capability_type' => 'post',
 		'show_in_rest'    => true,
-		'taxonomies'      => array( 'year' ),
+		'taxonomies'      => array( 'mrg_year' ),
 	);
 
 	register_post_type( 'mrg_publication', $args );
@@ -164,6 +167,9 @@ function register_researcher_cpt() {
 		'rewrite'         => $rewrite,
 		'capability_type' => 'post',
 		'show_in_rest'    => true,
+		'template'        => array(
+			array( 'core/pattern', array( 'slug' => 'moare-rg/single-mrg-researcher' ) ),
+		),
 	);
 
 	register_post_type( 'mrg_researcher', $args );
