@@ -65,6 +65,7 @@ require_once MOARE_RG_PATH . 'admin/notices.php';
 require_once MOARE_RG_PATH . 'includes/register-acf-fields.php';
 require_once MOARE_RG_PATH . 'includes/register-blocks.php';
 require_once MOARE_RG_PATH . 'includes/register-cpts.php';
+require_once MOARE_RG_PATH . 'includes/register-patterns.php';
 require_once MOARE_RG_PATH . 'includes/register-taxs.php';
 require_once MOARE_RG_PATH . 'includes/register-templates.php';
 
