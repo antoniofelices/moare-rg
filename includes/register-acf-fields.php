@@ -16,9 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-require_once MOARE_RG_PATH . 'includes/acf-fields/project.php';
 require_once MOARE_RG_PATH . 'includes/acf-fields/publication.php';
-require_once MOARE_RG_PATH . 'includes/acf-fields/researcher.php';
 
 /**
  * Register all ACF field groups when ACF Pro is active.
@@ -34,8 +32,6 @@ function register_field_groups() {
 		return;
 	}
 
-	\Moare_Rg\Acf_Fields\Project\register_field_group();
 	\Moare_Rg\Acf_Fields\Publication\register_field_group();
-	\Moare_Rg\Acf_Fields\Researcher\register_field_group();
 }
 add_action( 'acf/init', __NAMESPACE__ . '\register_field_groups', 10 );
